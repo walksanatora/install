@@ -10,6 +10,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y com.discordapp.Discord
 flatpak install -y us.zoom.Zoom
 flatpak install -y com.valvesoftware.Steam
+flatpak install -y com.obsproject.Studio
 wget -O chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 apt install ./chrome.deb
 apt remove firefox
