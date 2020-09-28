@@ -2,6 +2,7 @@
 
 git add -A
 read nfo
+git config --global credential.helper cache
 git commit -m "$nfo"
 git push
 echo "done"
