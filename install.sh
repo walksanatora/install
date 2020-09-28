@@ -14,6 +14,7 @@ apt install -y fish
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh $(logname) -s /usr/local/bin/fish
 curl -L https://get.oh-my.fish && omf install bobthefish | fish
+cp -a /fish/. /home/$(logname)/.config/functions
 apt install apache2
 wget -O chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 apt install -y ./chrome.deb
