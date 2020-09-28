@@ -7,4 +7,4 @@ git push
 echo "done"
 read
 
-#run git config --global credential.helper cache before to avoid loging in
+#run "git config --global credential.helper cache" before to avoid loging in
