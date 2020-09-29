@@ -8,12 +8,13 @@ fi
 apt update
 wget -O discord.deb "https://discord.com/api/download?platform=linux"
 apt install ./discord.deb
-apt install steam
-apt install obs-studio
+apt install -y steam
+apt install -y obs-studio
 apt install -y fish
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh $(logname) -s /usr/local/bin/fish
-curl -L https://get.oh-my.fish && omf install bobthefish | fish
+curl -L https://get.oh-my.fish | fish
+echo "omf install bobthefish" | fish
 cp -a /fish/. /home/$(logname)/.config/fish/functions
 echo "source /home/$(logname)/.config/fish/functions/func.fish" >> /home/$(logname)/.config/fish/config.fish
 apt install apache2
