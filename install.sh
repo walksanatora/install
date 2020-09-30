@@ -42,9 +42,14 @@ curl -s https://api.github.com/repos/anuken/mindustrybuilds/releases/latest \
 | cut -d : -f 2,3 \
 | tr -d \" \
 | wget -qi -
+mdir = $(pwd)
 rm *Server*
-mkdir /home/$(logname)/.local/share/mindustry
-mkdir /home/(logname)/.local/share/mindustry
+cd /home/$(logname)/.local/share
+mkdir Mindustry
+cd Mindustry
+mkdir be_builds
+cd $mdir
+mv *Desktop* /home/$(logname)/.local/share/mindustry/be_builds
 #everything else
 yes | apt upgrade
 
