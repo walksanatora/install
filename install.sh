@@ -36,6 +36,15 @@ wget -O zoom.deb "https://zoom.us/client/latest/zoom_amd64.deb"
 yes | apt install ./zoom.deb
 rm chrome.deb zoom.deb discord.deb
 
+#game i play
+curl -s https://api.github.com/repos/anuken/mindustrybuilds/releases/latest \
+| grep "browser_download_url.*jar" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+rm *Server*
+mkdir /home/$(logname)/.local/share/mindustry
+mkdir /home/(logname)/.local/share/mindustry
 #everything else
 yes | apt upgrade
 
