@@ -1,4 +1,4 @@
-function nema
+function explorer
     nemo (pwd) &
 end
 
@@ -9,4 +9,8 @@ function push
     git commit -m "$nfo"
     git push
     echo "done"
+end
+function mindustry
+    cd $fish_function_path[1]
+    ./min.sh
 end
