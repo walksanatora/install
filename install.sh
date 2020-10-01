@@ -44,7 +44,6 @@ curl -s https://api.github.com/repos/anuken/mindustrybuilds/releases/latest \
 | wget -qi -
 rm *Server*
 mdir = $(pwd)
-rm *Server*
 cd /home/$(logname)/.local/share
 mkdir Mindustry
 cd Mindustry
