@@ -11,9 +11,3 @@ function push
     echo "done"
 end
 
-function mindustry
-    set dire (pwd)
-    cd $fish_function_path[1]
-    ./min.sh
-    cd $dire
-end
