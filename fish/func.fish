@@ -11,3 +11,11 @@ function push
     echo "done"
 end
 
+function revert 
+    ./$fish_function_dir[1]/downgrade.sh $argv
+end
+
+function termbin
+    cat $1 | nc termbin.com 9999
+end
+

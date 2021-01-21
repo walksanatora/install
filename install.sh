@@ -52,6 +52,7 @@ cd $mdir
 mv *Desktop* /home/$(logname)/.local/share/mindustry/be_builds
 #everything else
 yes | apt upgrade
+echo 'shopt -s extglob' >> ~/.bashrc
 
 #finished gotta let them know
 echo "install finished press enter to exit"
